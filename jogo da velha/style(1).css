@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body{
+    
+    height: 96vh;
+    width: 98vw;
+    text-align: center;
+    background: linear-gradient(45deg, #E9D5CA, #827397, #4D4C7D, #363062  );
+    background-size: 300% 300%;
+    animation: color 5s ease infinite;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+    
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(229, 234, 245);
+    border: 1px solid rgb(71, 71, 71);
+    display: inline-block;
+}
+
+.o{
+    position: relative;
+}
+
+.o::after{
+    position: absolute;
+    content: "\2B55";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.x{
+    position: relative;
+}
+
+.x::after{
+    position: absolute;
+    content: "\274C";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
